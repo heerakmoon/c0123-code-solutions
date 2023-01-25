@@ -1,0 +1,9 @@
+button {
+  font-size: x-large;
+  padding: 8px 25px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
