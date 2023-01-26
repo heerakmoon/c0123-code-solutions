@@ -14,3 +14,7 @@
 .column-third {
   flex-basis: calc(100% / 3);
 }
+
+.column-fourth {
+  flex-basis: 25%;
+}
