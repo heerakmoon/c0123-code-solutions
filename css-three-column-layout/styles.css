@@ -1,3 +1,7 @@
+img {
+  width: 100%;
+}
+
 .blue {
   background-color: rgb(25 150 218);
   width: 100%;
@@ -6,6 +10,7 @@
 .container {
   max-width: 900px;
   margin: auto;
+  padding: 25px 0;
 }
 
 .row {
@@ -16,8 +21,17 @@
   flex-basis: 100%;
 }
 
+.column-third {
+  flex-basis: calc(100% / 3);
+}
+
 .text-white-lato {
   color: white;
   font-family: Lato, sans-serif;
   font-weight: normal;
+}
+
+.circle {
+  background-color: white;
+  border-radius: 50%;
 }
