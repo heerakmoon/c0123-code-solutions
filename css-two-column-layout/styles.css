@@ -2,6 +2,15 @@ header {
   text-align: center;
 }
 
+img {
+  width: 100%;
+}
+
+p {
+  font-size: x-small;
+  line-height: 1rem;
+}
+
 .container {
   width: 600px;
   margin: auto;
@@ -9,9 +18,27 @@ header {
 
 .row {
   width: 100%;
-  display: flex;
+  font-family: Karla, sans-serif;
 }
 
 .column-full {
+  display: flex;
   flex-basis: 100%;
+}
+
+.column-half {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.column-two-thirds {
+  flex-basis: calc(200% / 3);
+}
+
+.column-third {
+  flex-basis: calc(100% / 3);
+}
+
+.justify-center {
+  justify-content: center;
 }
