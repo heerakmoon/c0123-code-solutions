@@ -1,5 +1,5 @@
 img {
-  width: 100%;
+  width: 50px;
 }
 
 .blue {
@@ -8,9 +8,9 @@ img {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
-  padding: 25px 0;
+  padding: 50px 0;
 }
 
 .row {
@@ -29,9 +29,24 @@ img {
   color: white;
   font-family: Lato, sans-serif;
   font-weight: normal;
+  text-align: center;
+}
+
+.text-grey-lato {
+  color: rgb(190 209 220);
+  font-family: Lato, sans-serif;
+  text-align: center;
 }
 
 .circle {
+  width: 100px;
+  height: 100px;
   background-color: white;
   border-radius: 50%;
+  margin: auto;
+}
+
+.center {
+  margin: auto;
+  width: 75%;
 }
