@@ -1,0 +1,17 @@
+header {
+  text-align: center;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
