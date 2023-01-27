@@ -8,7 +8,11 @@ img {
 
 p {
   font-size: x-small;
-  line-height: 1rem;
+  line-height: 1.25rem;
+}
+
+h5 {
+  margin: 0;
 }
 
 .container {
@@ -18,6 +22,7 @@ p {
 
 .row {
   width: 100%;
+  margin: 25px 0;
   font-family: Karla, sans-serif;
 }
 
@@ -35,10 +40,18 @@ p {
   flex-basis: calc(200% / 3);
 }
 
-.column-third {
-  flex-basis: calc(100% / 3);
+.column-fourth {
+  flex-basis: 25%;
+}
+
+.column-three-fourth {
+  flex-basis: 75%;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.text-padding {
+  padding: 20px 35px 20px 10px;
 }
