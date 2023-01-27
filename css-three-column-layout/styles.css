@@ -1,0 +1,23 @@
+.blue {
+  background-color: rgb(25 150 218);
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.text-white-lato {
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: normal;
+}
