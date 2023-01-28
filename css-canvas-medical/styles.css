@@ -6,6 +6,10 @@ button {
   font-family: Avenir, sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 h6 {
   color: rgb(160 160 160);
   font-family: Avenir, sans-serif;
@@ -22,8 +26,8 @@ h6 {
   width: 100%;
 }
 
-.space-evenly {
-  justify-content: space-evenly;
+.space-between {
+  justify-content: space-between;
   align-items: center;
 }
 
