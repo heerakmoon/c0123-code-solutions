@@ -3,6 +3,13 @@ button {
   color: white;
   border: none;
   border-radius: 3px;
+  font-family: Avenir, sans-serif;
+}
+
+h6 {
+  color: rgb(160 160 160);
+  font-family: Avenir, sans-serif;
+  font-weight: 500;
 }
 
 .container {
@@ -31,4 +38,10 @@ button {
 .header-button {
   font-size: x-small;
   padding: 10px 15px;
+}
+
+.text-canvas-navy {
+  font-family: "Tiempos Headline", serif;
+  font-weight: normal;
+  color: rgb(10 66 101);
 }
