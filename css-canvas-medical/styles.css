@@ -49,3 +49,7 @@ h6 {
   font-weight: normal;
   color: rgb(10 66 101);
 }
+
+.hero-img {
+  position: relative;
+}
