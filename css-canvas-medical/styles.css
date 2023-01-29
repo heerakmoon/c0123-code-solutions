@@ -39,6 +39,10 @@ h6 {
   flex-basis: 50%;
 }
 
+.col-third {
+  flex-basis: calc(100% / 3);
+}
+
 .header-button {
   font-size: x-small;
   padding: 10px 15px;
@@ -48,6 +52,15 @@ h6 {
   font-family: "Tiempos Headline", serif;
   font-weight: normal;
   color: rgb(10 66 101);
+}
+
+.text-default-white {
+  color: white;
+}
+
+.text-avenir-white {
+  color: white;
+  font-family: Avenir, sans-serif;
 }
 
 .hero-img {
