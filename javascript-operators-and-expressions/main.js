@@ -11,3 +11,11 @@ var change = payment - bill;
 
 console.log('value of change:', change);
 console.log('typeof change:', typeof change);
+
+var quizzes = 80;
+var midterm = 85;
+var final = 90;
+var grade = (quizzes + midterm + final) / 3;
+
+console.log('value of grade:', grade);
+console.log('typeof grade:', typeof grade);
