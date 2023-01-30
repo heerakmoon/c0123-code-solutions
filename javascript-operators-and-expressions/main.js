@@ -32,3 +32,9 @@ var isAcidic = pH < 7;
 
 console.log('value of isAcidic:', isAcidic);
 console.log('typeof isAcidic:', isAcidic);
+
+var headCount = 5;
+var isSparta = headCount === 300;
+
+console.log('value of isSparta:', isSparta);
+console.log('typeof isSparta:', typeof isSparta);
