@@ -1,0 +1,71 @@
+header {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: x-small;
+  line-height: 1.1rem;
+}
+
+h5 {
+  margin: 0;
+}
+
+h1 {
+  margin: 15px;
+}
+
+button {
+  border: 2px solid rgb(209 76 69);
+  background-color: white;
+  color: rgb(209 76 69);
+  font-family: Karla, sans-serif;
+  font-weight: bold;
+  font-size: small;
+  padding: 5px 30px;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+.row {
+  width: 100%;
+  font-family: Karla, sans-serif;
+  padding-top: 10px;
+}
+
+.column-full {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.column-half {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.column-two-thirds {
+  flex-basis: calc(200% / 3);
+}
+
+.column-fourth {
+  flex-basis: 25%;
+}
+
+.column-three-fourth {
+  flex-basis: 75%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-padding {
+  padding: 20px 35px 20px 10px;
+}
