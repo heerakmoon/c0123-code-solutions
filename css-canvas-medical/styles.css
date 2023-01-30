@@ -10,6 +10,10 @@ img {
   width: 100%;
 }
 
+h3 {
+  margin: 10px 0;
+}
+
 h6 {
   color: rgb(160 160 160);
   font-family: Avenir, sans-serif;
@@ -90,6 +94,11 @@ p {
   text-align: center;
 }
 
+.btn-right {
+  justify-content: right;
+  align-items: center;
+}
+
 .hero-img {
   position: relative;
   width: 100%;
@@ -131,6 +140,10 @@ p {
 
 .margin-10 {
   margin: 10px 0;
+}
+
+.padding-10 {
+  padding: 10px 0;
 }
 
 .light-gray-box {
