@@ -1,0 +1,171 @@
+button {
+  background-color: rgb(41 68 100);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-family: Avenir, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: small;
+  font-weight: normal;
+}
+
+h6 {
+  padding: 5px;
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  line-height: 1rem;
+  font-size: x-small;
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  width: 800px;
+  margin: auto;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}
+
+.col-half {
+  flex-basis: 50%;
+}
+
+.col-third {
+  flex-basis: calc(100% / 3);
+}
+
+.header-button {
+  font-size: x-small;
+  padding: 8px 15px;
+}
+
+.text-avenir-lg {
+  color: rgb(160 160 160);
+  font-family: Avenir, sans-serif;
+}
+
+.text-tiempos-white {
+  color: white;
+  font-weight: normal;
+  font-family: "Tiempos Headline", serif;
+}
+
+.text-avenir-white {
+  color: white;
+  font-family: Avenir, sans-serif;
+}
+
+.text-tiempos-dark-grey {
+  color: rgb(110 110 110);
+  font-family: "Tiempos Headline", serif;
+  font-weight: normal;
+}
+
+.text-avenir-dark-grey {
+  color: rgb(110 110 110);
+  font-family: Avenir, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-right {
+  justify-content: right;
+  align-items: center;
+}
+
+.hero-img {
+  position: relative;
+  width: 100%;
+  height: 375px;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  padding: 0 50px;
+  margin: 50px 0;
+}
+
+.hero-text {
+  position: absolute;
+  width: 45%;
+  padding: 50px 0;
+}
+
+.canvas-logo-img {
+  width: 75px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(51 51 51 / 25%);
+}
+
+.get-started-button {
+  font-size: x-small;
+  padding: 8px 25px;
+}
+
+.margin-zero {
+  margin: 0;
+}
+
+.margin-20 {
+  margin: 20px 0;
+}
+
+.margin-10 {
+  margin: 10px 0;
+}
+
+.padding-10 {
+  padding: 10px 0;
+}
+
+.padding-25 {
+  padding: 25px 0;
+}
+
+.left-right-padding {
+  padding: 0 10px;
+}
+
+.light-gray-box {
+  width: 100%;
+  background-color: rgb(250 250 250);
+  padding: 20px 0;
+}
+
+.dark-grey-box {
+  width: 100%;
+  background-color: rgb(82 83 81);
+  padding: 70px 0;
+}
