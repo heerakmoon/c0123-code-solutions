@@ -19,3 +19,10 @@ var grade = (quizzes + midterm + final) / 3;
 
 console.log('value of grade:', grade);
 console.log('typeof grade:', typeof grade);
+
+var firstName = 'Heerak';
+var lastName = 'Moon';
+var fullName = firstName + ' ' + lastName;
+
+console.log('value of fullName:', fullName);
+console.log('typeof fullName:', typeof fullName);
