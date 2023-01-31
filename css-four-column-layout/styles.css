@@ -1,5 +1,14 @@
+h3 {
+  font-size: small;
+}
+
 img {
   width: 100%;
+}
+
+p {
+  font-size: small;
+  margin: 20px 0;
 }
 
 .container {
@@ -25,4 +34,8 @@ img {
 
 .text-center {
   text-align: center;
+}
+
+.font-barlow {
+  font-family: Barlow, sans-serif;
 }
