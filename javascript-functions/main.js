@@ -18,3 +18,9 @@ function getArea(width, height) {
 }
 
 console.log('getArea(17, 42):', getArea(17, 42));
+
+function getFirstName(person) {
+  return person.firstName;
+}
+
+console.log('getFirstName({firstName: "Lelouche", lastName: "Lamperouge"}):', getFirstName({ firstName: 'Lelouche', lastName: 'Lamperouge' }));
