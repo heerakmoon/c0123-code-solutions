@@ -1,0 +1,45 @@
+h3 {
+  font-size: small;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: small;
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full {
+  flex-basis: 100%;
+}
+
+.col-fourth {
+  flex-basis: 25%;
+}
+
+.width-fourth {
+  width: 25%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-barlow {
+  font-family: Barlow, sans-serif;
+}
+
+.margin {
+  margin: 0 5px;
+}
