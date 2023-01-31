@@ -1,5 +1,10 @@
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 80%;
+  margin: auto;
 }
 
 .row {
@@ -8,4 +13,12 @@
 
 .col-full {
   flex-basis: 100%;
+}
+
+.col-fourth {
+  flex-basis: 25%;
+}
+
+.text-center {
+  text-align: center;
 }
