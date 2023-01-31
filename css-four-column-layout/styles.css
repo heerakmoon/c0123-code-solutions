@@ -12,7 +12,7 @@ p {
 }
 
 .container {
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -38,4 +38,8 @@ p {
 
 .font-barlow {
   font-family: Barlow, sans-serif;
+}
+
+.margin {
+  margin: 0 5px;
 }
