@@ -11,3 +11,10 @@ function greet(name) {
 }
 
 console.log('greet("Beavis"):', greet('Beavis'));
+
+function getArea(width, height) {
+  var areaOfRectangle = width * height;
+  return areaOfRectangle;
+}
+
+console.log('getArea(17, 42):', getArea(17, 42));
