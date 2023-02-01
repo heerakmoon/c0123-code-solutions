@@ -1,0 +1,12 @@
+.container {
+  max-width: 90%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.col-full {
+  flex-basis: 100%;
+}
