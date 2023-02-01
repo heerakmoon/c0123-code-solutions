@@ -39,3 +39,11 @@ function isOldEnoughToDrink(person) {
     return true;
   }
 }
+
+function isOldEnoughToDrive(person) {
+  if (person.age >= 16) {
+    return true;
+  } else {
+    return false;
+  }
+}
