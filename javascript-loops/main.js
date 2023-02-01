@@ -17,8 +17,6 @@ function getNumbersToTen() {
   return numbers;
 }
 
-console.log('getNumbersToTen()', getNumbersToTen());
-
 function getEvenNumbersToTwenty() {
   var evenNumbers = [];
   var currentNumber = 2;
@@ -28,8 +26,6 @@ function getEvenNumbersToTwenty() {
   }
   return evenNumbers;
 }
-
-console.log('getEvenNumbersToTwenty', getEvenNumbersToTwenty());
 
 function repeatWord(word, times) {
   var count = 1;
@@ -41,4 +37,8 @@ function repeatWord(word, times) {
   return repeated;
 }
 
-console.log('repeatWord("javascript", 30)', repeatWord('javascript', 30));
+function logEachCharacter(string) {
+  for (var i = 0; i < string.length; i++) {
+    console.log(string[i]);
+  }
+}
