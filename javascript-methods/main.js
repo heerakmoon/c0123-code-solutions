@@ -54,3 +54,13 @@ library.unshift(css);
 library.splice(1, 1);
 
 console.log('value of library:', library);
+
+var fullName = 'Heerak Moon';
+var firstAndLastName = fullName.split(' ');
+
+console.log('value of firstAndLastName:', firstAndLastName);
+
+var firstName = firstAndLastName[0];
+var sayMyName = firstName.toUpperCase();
+
+console.log('value of sayMyName:', sayMyName);
