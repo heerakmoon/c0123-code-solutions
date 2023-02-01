@@ -4,6 +4,11 @@ img {
   height: 100%;
 }
 
+p {
+  font-family: sans-serif;
+  font-size: small;
+}
+
 .container {
   max-width: 90%;
   margin: auto;
