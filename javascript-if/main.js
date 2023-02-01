@@ -31,3 +31,11 @@ function startsWithJ(string) {
     return false;
   }
 }
+
+function isOldEnoughToDrink(person) {
+  if (person.age < 21) {
+    return false;
+  } else {
+    return true;
+  }
+}
