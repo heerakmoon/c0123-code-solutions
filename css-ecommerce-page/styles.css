@@ -1,9 +1,12 @@
 img {
   width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .container {
   max-width: 90%;
+  margin: auto;
 }
 
 .row {
@@ -27,6 +30,6 @@ img {
   text-align: center;
 }
 
-.col-height {
-  height: 300px;
+.margin-10 {
+  margin: 0 10px;
 }
