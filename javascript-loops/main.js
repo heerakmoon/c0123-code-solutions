@@ -30,3 +30,15 @@ function getEvenNumbersToTwenty() {
 }
 
 console.log('getEvenNumbersToTwenty', getEvenNumbersToTwenty());
+
+function repeatWord(word, times) {
+  var count = 1;
+  var repeated = '';
+  while (count <= times) {
+    repeated += word;
+    count++;
+  }
+  return repeated;
+}
+
+console.log('repeatWord("javascript", 30)', repeatWord('javascript', 30));
