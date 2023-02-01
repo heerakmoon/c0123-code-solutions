@@ -53,3 +53,15 @@ function isOldEnoughToDrinkAndDrive(person) {
     return false;
   }
 }
+
+function categorizeAcidity(pH) {
+  if (pH === 7) {
+    return 'neutral';
+  } else if (pH < 7) {
+    return 'acid';
+  } else if (pH > 7) {
+    return 'base';
+  } else {
+    return 'invalid pH level';
+  }
+}
