@@ -23,3 +23,11 @@ function isEven(number) {
     return false;
   }
 }
+
+function startsWithJ(string) {
+  if (string[0] === 'J') {
+    return true;
+  } else {
+    return false;
+  }
+}
