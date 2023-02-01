@@ -17,4 +17,16 @@ function getNumbersToTen() {
   return numbers;
 }
 
-console.log('getNumbersToTen()', getNumbersToTen(15));
+console.log('getNumbersToTen()', getNumbersToTen());
+
+function getEvenNumbersToTwenty() {
+  var evenNumbers = [];
+  var currentNumber = 2;
+  while (currentNumber <= 20) {
+    evenNumbers.push(currentNumber);
+    currentNumber += 2;
+  }
+  return evenNumbers;
+}
+
+console.log('getEvenNumbersToTwenty', getEvenNumbersToTwenty());
