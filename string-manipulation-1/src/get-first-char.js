@@ -1,7 +1,7 @@
 /* exported getFirstChar */
 /*
 * Define a function, named getFirstChar, with one parameter, string
-*   return the string parameter at the first index, 0
+*   return the first character of string out of the function
  */
 
 function getFirstChar(string) {
