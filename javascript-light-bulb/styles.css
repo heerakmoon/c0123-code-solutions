@@ -24,3 +24,7 @@
 .night {
   background-color: rgb(25 33 63);
 }
+
+div:hover {
+  cursor: pointer;
+}
