@@ -1,0 +1,15 @@
+.circle {
+  align-items: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.on {
+  background-color: rgb(250 234 132);
+}
+
+.day {
+  background-color: rgb(254 249 241);
+}
