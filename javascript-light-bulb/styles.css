@@ -1,5 +1,6 @@
 .circle {
-  align-items: center;
+  position: absolute;
+  inset: 0;
   border-radius: 50%;
   width: 150px;
   height: 150px;
