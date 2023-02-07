@@ -4,4 +4,9 @@
 */
 
 function chunk(array, size) {
+  // var newArr = [];
+  // for (var i = 0; i < array.length; i += size) {
+  //   var subArr = [];
+
+  // }
 }
