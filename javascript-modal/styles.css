@@ -1,0 +1,14 @@
+button {
+  color: white;
+  font-size: x-large;
+  border: none;
+  padding: 30px, 25px;
+}
+
+h2 {
+  font-family: sans-serif;
+}
+
+.hidden {
+  display: none;
+}
