@@ -1,0 +1,30 @@
+.circle {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.on {
+  background-color: rgb(250 234 132);
+  box-shadow: 0 0 12px 2px rgb(250 234 132);
+}
+
+.day {
+  background-color: rgb(254 249 241);
+}
+
+.off {
+  background-color: rgb(36 50 105);
+  box-shadow: 0 0 12px 2px rgb(17 24 50);
+}
+
+.night {
+  background-color: rgb(25 33 63);
+}
+
+div:hover {
+  cursor: pointer;
+}
