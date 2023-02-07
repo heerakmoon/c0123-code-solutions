@@ -37,7 +37,7 @@ h2 {
   padding: 25px 0;
 }
 
-.modal {
+.black-bg {
   position: fixed;
   inset: 0;
   display: flex;
