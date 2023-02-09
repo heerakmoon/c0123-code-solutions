@@ -10,8 +10,12 @@
 
 function pick(source, keys) {
   var pickObj = {};
-  // for (var key in source) {
-  //   i
-  // }
+  for (var key in source) {
+    for (var item of keys) {
+      if (key === item) {
+        pickObj[key] = source[key];
+      }
+    }
+  }
   return pickObj;
 }
