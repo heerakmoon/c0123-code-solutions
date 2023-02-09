@@ -1,6 +1,6 @@
 var $tabContainer = document.querySelector('.tab-container');
 var $tabs = document.querySelectorAll('.tab');
-// var $views = document.querySelectorAll('.view');
+var $views = document.querySelectorAll('.view');
 
 $tabContainer.addEventListener('click', function (e) {
   if (e.target.matches('.tab')) {
@@ -9,6 +9,14 @@ $tabContainer.addEventListener('click', function (e) {
         $tabs[i].className += ' active';
       } else {
         $tabs[i].className = 'tab';
+      }
+    }
+    var dataViewAtt = e.target.getAttribute('data-view');
+    for (var k = 0; k < $views.length; k++) {
+      if ($views[k].getAttribute('data-view') === dataViewAtt) {
+        $views[k].className = 'view';
+      } else {
+        $views[k].className = 'view hidden';
       }
     }
   }
