@@ -2,19 +2,19 @@
 /*
 * Define a function, named pick, with two parameters, source and keys
 *   Create a variable, pickObj, with the value of an empty object literal
-*   Use a loop to iterate through source's properties, with each iteration
-*     Check if the property is the same as one of the keys, if there is a match
-*       Add the property and its value to the pickObj object
+*   Use a loop to iterate through the keys array, with each iteration
+*     Create a new variable, value, with the value of the source object's value at the item from keys array
+*     Chcck to see if there is a value for the value variable, as long as there is a value
+*       Make that item from keys a property of the pickObj object and assign the value variable to it
 *   Return the pickObj variable
 */
 
 function pick(source, keys) {
   var pickObj = {};
-  for (var key in source) {
-    for (var item of keys) {
-      if (key === item) {
-        pickObj[key] = source[key];
-      }
+  for (var key of keys) {
+    var value = source[key];
+    if (value !== undefined) {
+      pickObj[key] = value;
     }
   }
   return pickObj;
