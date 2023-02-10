@@ -28,3 +28,8 @@ var student = '{"id": "22", "name": "Jason"}';
 
 console.log('student string:', student);
 console.log('typeof student:', typeof student);
+
+var studentObj = JSON.parse(student);
+
+console.log('studentObj:', studentObj);
+console.log('typeof studentObj:', typeof studentObj);
