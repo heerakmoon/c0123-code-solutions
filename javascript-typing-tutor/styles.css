@@ -1,3 +1,7 @@
+div {
+  display: flex;
+}
+
 span {
   color: black;
 }
