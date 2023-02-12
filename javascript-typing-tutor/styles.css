@@ -28,3 +28,11 @@ span {
   border-bottom: solid 5px;
   color: red;
 }
+
+.font-red {
+  color: red;
+}
+
+.font-green {
+  color: rgb(24 205 27);
+}
