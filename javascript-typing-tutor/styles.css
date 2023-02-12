@@ -1,7 +1,12 @@
-div {
-  display: flex;
-}
-
 span {
   color: black;
+  font-family: Righteous, cursive;
+}
+
+.container {
+  max-width: 1000px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
