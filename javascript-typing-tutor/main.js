@@ -1,10 +1,10 @@
 var $span = document.querySelectorAll('span');
 var spanIndex = 0;
 var $currentChar = $span[spanIndex];
-// console.log($span);
 
 document.addEventListener('keydown', function (event) {
   // console.log('event.key:', event.key);
+  // console.log('currentChar:', $currentChar);
   if (event.key === $currentChar.textContent) {
     $currentChar.className = 'font-green';
     $currentChar = $span[++spanIndex];
