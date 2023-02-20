@@ -1,0 +1,31 @@
+span {
+  color: black;
+  font-family: Righteous, cursive;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  border-bottom: solid 5px;
+  color: black;
+}
+
+.red-line {
+  border-bottom: solid 5px;
+  color: red;
+}
+
+.font-red {
+  color: red;
+}
+
+.font-green {
+  color: rgb(24 205 27);
+}
