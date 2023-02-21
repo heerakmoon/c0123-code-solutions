@@ -27,3 +27,15 @@ Account.prototype.withdraw = function (amount) {
     return false;
   }
 };
+
+Account.prototype.getBalance = function () {
+  var availableFunds = 0;
+  for (var i = 0; i < this.transactions.length; i++) {
+    if (this.transactions[i].type === 'deposit') {
+      availableFunds += this.transactions[i].amount;
+    } else {
+      availableFunds -= this.transactions[i].amount;
+    }
+  }
+  return availableFunds;
+};
