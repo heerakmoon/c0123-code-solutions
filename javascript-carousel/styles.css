@@ -1,9 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 img {
   width: 100%;
+  padding: 20px 10px;
 }
 
 i {
   padding: 10px;
+  color: rgb(19 26 83);
+}
+
+.container {
+  margin: auto;
+  height: 100vh;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
 }
 
 .arrows {
@@ -14,10 +32,9 @@ i {
   display: none;
 }
 
-.container {
+.box {
   border: 2px solid black;
-  max-width: 80%;
-  margin: auto;
+  width: 100%;
 }
 
 .row {
