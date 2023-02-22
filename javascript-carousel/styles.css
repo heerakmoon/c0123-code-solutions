@@ -16,6 +16,10 @@ i {
   color: rgb(19 26 83);
 }
 
+i:hover {
+  cursor: pointer;
+}
+
 .container {
   margin: auto;
   height: 100vh;
