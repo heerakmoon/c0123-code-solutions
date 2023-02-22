@@ -5,7 +5,8 @@ function countDown() {
     $h1.textContent--;
   } else {
     $h1.textContent = '~Earth Beeeelooowww Us~';
+    clearInterval(timerId);
   }
 }
 
-setInterval(countDown, 1000);
+var timerId = setInterval(countDown, 1000);
