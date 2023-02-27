@@ -9,17 +9,35 @@ $body.className = 'bulbasaur';
 
 $rightArrow.addEventListener('click', function (event) {
   hideImg();
-  ++indexCounter;
+  nextIndex();
   showImg();
   changeBackgroundColor();
 });
 
 $leftArrow.addEventListener('click', function (event) {
   hideImg();
-  --indexCounter;
+  previousIndex();
   showImg();
   changeBackgroundColor();
 });
+
+function nextIndex() {
+  if (indexCounter === $images.length - 1) {
+    indexCounter = 0;
+    return indexCounter;
+  } else {
+    return ++indexCounter;
+  }
+}
+
+function previousIndex() {
+  if (indexCounter === 0) {
+    indexCounter = $images.length - 1;
+    return indexCounter;
+  } else {
+    return --indexCounter;
+  }
+}
 
 function hideImg() {
   $images[indexCounter].className = 'hidden';
