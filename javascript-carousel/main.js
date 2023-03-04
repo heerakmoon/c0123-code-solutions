@@ -8,16 +8,12 @@ var indexCounter = 0;
 $body.className = 'bulbasaur';
 
 $rightArrow.addEventListener('click', function (event) {
-  hideImg();
-  nextIndex();
-  showImg();
+  showImg(nextIndex());
   changeBackgroundColor();
 });
 
 $leftArrow.addEventListener('click', function (event) {
-  hideImg();
-  previousIndex();
-  showImg();
+  showImg(previousIndex());
   changeBackgroundColor();
 });
 
@@ -39,14 +35,16 @@ function previousIndex() {
   }
 }
 
-function hideImg() {
-  $images[indexCounter].className = 'hidden';
-  $circles[indexCounter].className = 'far fa-circle';
-}
-
-function showImg() {
-  $images[indexCounter].className = '';
-  $circles[indexCounter].className = 'fas fa-circle';
+function showImg(index) {
+  for (var i = 0; i < $images.length; i++) {
+    if (i === index) {
+      $images[indexCounter].className = '';
+      $circles[indexCounter].className = 'fas fa-circle';
+    } else {
+      $images[indexCounter].className = 'hidden';
+      $circles[indexCounter].className = 'far fa-circle';
+    }
+  }
 }
 
 function changeBackgroundColor() {
