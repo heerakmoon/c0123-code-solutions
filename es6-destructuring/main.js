@@ -4,11 +4,9 @@ const book1 = {
   libraryID: 3353
 };
 
-const { title = 'Goodnight Punpun' } = book1;
-const { author = 'Inion Asano' } = book1;
-const { libraryID = 3353 } = book1;
+const { title, author, libraryID } = book1;
 
-console.log('The title of the book is ' + title + ', the author is ' + author + ', and the library id is ' + libraryID);
+console.log(`The title of the book is ${title}, the author is ${author}, and the library id is ${libraryID}`);
 
 const book2 = {
   title: 'Les Fleurs du mal',
@@ -16,11 +14,9 @@ const book2 = {
   libraryID: 2345
 };
 
-const { title: book2Title } = book2;
-const { author: book2Author } = book2;
-const { libraryID: book2ID } = book2;
+const { title: book2Title, author: book2Author, libraryID: book2ID } = book2;
 
-console.log('The title of the book is ' + book2Title + ', the author is ' + book2Author + ', and the library id is ' + book2ID);
+console.log(`The title of the book is ${book2Title}, the author is ${book2Author}, and the library id is ${book2ID}`);
 
 const library = [
   {
@@ -51,6 +47,6 @@ console.log('book3:', book3);
 console.log('book4:', book4);
 console.log('book5:', book5);
 
-const [, book6] = library;
+const [,,, book6] = library;
 
 console.log('book6:', book6);
