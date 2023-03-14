@@ -1,0 +1,144 @@
+    1  git switch es6-const-let
+    2  git branch es6-const-let
+    3  git switch es6-const-let
+    4  git status
+    5  git add .
+    6  git status
+    7  git add .
+    8  git status
+    9  git commit -m "Changed all var to let or const"
+   10  git push origin es6-const-let
+   11  git status
+   12  git add .
+   13  git status
+   14  git commit -m "Moved the variable 'variable' up one line"
+   15  git push origin es6-const-let
+   16  git switch main
+   17  git pull origin main
+   18  git branch es6-template-literals
+   19  git switch es6-template-literals
+   20  git status
+   21  git add .
+   22  git status
+   23  git commit -m "Converted string concatenations to template literals"
+   24  git push origin es6-template-literals
+   25  git status
+   26  git add .
+   27  git status
+   28  git commit -m "changed variable applePen value from being concatenated to template literal"
+   29  git push origin es6-template-literals
+   30  git switch main
+   31  git branch es6-destructuring
+   32  git switch es6-destructuring
+   33  git status
+   34  git add .
+   35  git status
+   36  git commit -m "Destructured book objects and created three constants for each and logged to console"
+   37  git push origin es6-destructuring
+   38  git status
+   39  git add .
+   40  git status
+   41  git commit -m "Destructured library array and logged book items in library to console"
+   42  git push origin es6-destructuring
+   43  git switch main
+   44  git pull origin main
+   45  git switch es6-destructuring
+   46  git status
+   47  git add .
+   48  git status
+   49  git commit -m "Changed individual variable declarations to one line and changed concatenation to template literal"
+   50  git push origin es6-destructuring
+   51  git switch main
+   52  git fetch --all
+   53  git switch es6-arrow-functions
+   54  git status
+   55  git add .
+   56  git status
+   57  git commit -m "Changed both setTimeout functions to include function keyword again"
+   58  git status
+   59  git add .
+   60  git status
+   61  git commit -m "Changed setTimeout functions back to arrow functions, changed renderJokePhrase and appendJokePhrase"
+   62  git push origin es6-arrow-functions
+   63  git switch main
+   64  git switch es6-arrow-functions
+   65  git switch main
+   66  git status
+   67  git add .
+   68  git status
+   69  git commit -m "rules arrow-parens 'as-needed' to 'always' in eslintrc file"
+   70  git push origin main
+   71  git pull origin main
+   72  git push origin main
+   73  git branch command-line-basics
+   74  git switch command-line-basics
+   75  cd command-line-basics
+   76  man man
+   77  man man
+   78  man cat
+   79  cat laziness.txt
+   80  cat impatient.txt
+   81  cat impatience.txt
+   82  cat hubris.txt
+   83  cat laziness.txt impatience.txt hubris.txt
+   84  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+   85  cat three-virtues.txt
+   86  man ls
+   87  man ls
+   88  ls command-line-basics
+   89  ls command-line-basics/
+   90  man ls
+   91  ls command-line-basics -a
+   92  git ls command-line-basics
+   93  ls command-line-basics
+   94  ls lfz-staff/
+   95  ls command-line-basics -F
+   96  ls lfz-staff/ -a
+   97  ls lfz-stuff/ -F
+   98  ls lfz-staff/ -F
+   99  ls -aF lfz-staff > lfz-staff/contents.txt
+  100  cat lfz-staff/contents.txt
+  101  man pwd
+  102  pwd command-line-basics
+  103  pwd > i-was-here.txt
+  104  ls command-line-basics
+  105  man ls
+  106  ls
+  107  ls -a 
+  108  ls -F
+  109  cat i-was-here.txt
+  110  man echo
+  111  echo 'Hello, World!'
+  112  echo 'Hello, World!' > hello.txt
+  113  ls 
+  114  cat hello.txt
+  115  man touch
+  116  touch tag-youre-it.txt
+  117  touch snoot/boop.txt
+  118  ls snoot
+  119  man mkdir
+  120  mkdir parent
+  121  ls 
+  122  mkdir -p parent/child/grandchild
+  123  touch parent/child/grandchild/.gitkeep
+  124  ls -a
+  125  man mv
+  126  man mv
+  127  mv [-T] pokiemans pokemon
+  128  man mv
+  129  mv pokiemans pokemon
+  130  ls
+  131  man rm
+  132  rm lol.txt
+  133  ls 
+  134  rm -r kill-me/
+  135  ls
+  136  man cp
+  137  man history
+  138  cp and-then.txt no-and-then.txt
+  139  ls
+  140  cat and-then.txt
+  141  cat no-and-then.txt
+  142  man history
+  143  history
+  144  history > command-history.txt
