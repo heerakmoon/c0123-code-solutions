@@ -1,1 +1,3 @@
-// const getDifference = (x, y) => x - y;
+export default function subtract(x, y) {
+  return x - y;
+}

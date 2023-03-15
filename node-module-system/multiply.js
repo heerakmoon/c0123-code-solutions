@@ -1,1 +1,3 @@
-// const getProduct = (x, y) => x * y;
+export default function multiply(x, y) {
+  return x * y;
+}

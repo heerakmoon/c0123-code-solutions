@@ -1,1 +1,3 @@
-// const getQuotient = (x, y) => x / y;
+export default function divide(x, y) {
+  return x / y;
+}
