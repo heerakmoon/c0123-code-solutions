@@ -15,14 +15,7 @@ const names = [
 const eventNumbers = numbers.filter((number) => number % 2 === 0);
 const overFive = numbers.filter((number) => number > 5);
 const startWithE = names.filter((name) => name[0] === 'E');
-const haveD = names.filter((name) => {
-  for (var i = 0; i < name.length; i++) {
-    if (name[i] === 'd' || name[i] === 'D') {
-      return true;
-    }
-  }
-  return false;
-});
+const haveD = names.filter((name) => name.toLowerCase().includes('d'));
 
 console.log('eventNumbers:', eventNumbers);
 console.log('overFive:', overFive);
