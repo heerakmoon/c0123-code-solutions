@@ -1,7 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
 const feature = process.argv[2];
-const newNote = process.argv[3] + '';
+const newNote = process.argv[3];
 
 readFile('data.json', 'utf-8')
   .then((data) => {
@@ -13,14 +13,21 @@ readFile('data.json', 'utf-8')
         console.log(`${id}: ${notes[id]}`);
       }
     } else if (feature === 'create') {
-      notes[nextId] = newNote;
+      notes[nextId] = newNote + '';
       dataParsed.nextId = nextId + 1;
-      writeFile('data.json', JSON.stringify(dataParsed, null, 2), 'utf-8');
+      write(dataParsed);
+    } else if (feature === 'update') {
+      notes[newNote] = process.argv[4];
+      write(dataParsed);
     } else if (feature === 'delete') {
-      if (notes[process.argv[3]]) {
-        delete notes[process.argv[3]];
-        writeFile('data.json', JSON.stringify(dataParsed, null, 2), 'utf-8');
+      if (notes[newNote]) {
+        delete notes[newNote];
+        write(dataParsed);
       }
     }
   })
   .catch((err) => console.error(err.message));
+
+function write(data) {
+  return writeFile('data.json', JSON.stringify(data, null, 2), 'utf-8');
+}
