@@ -16,6 +16,11 @@ readFile('data.json', 'utf-8')
       notes[nextId] = newNote;
       dataParsed.nextId = nextId + 1;
       writeFile('data.json', JSON.stringify(dataParsed, null, 2), 'utf-8');
+    } else if (feature === 'delete') {
+      if (notes[process.argv[3]]) {
+        delete notes[process.argv[3]];
+        writeFile('data.json', JSON.stringify(dataParsed, null, 2), 'utf-8');
+      }
     }
   })
   .catch((err) => console.error(err.message));
