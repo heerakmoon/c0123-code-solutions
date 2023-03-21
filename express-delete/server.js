@@ -30,6 +30,15 @@ app.get('/api/grades', (req, res) => {
   res.json(gradesArr);
 });
 
+app.delete('/api/grades/:id', (req, res) => {
+  const id = req.params.id;
+  for (const studentId in grades) {
+    if (id === studentId) {
+      delete grades.studentId;
+    }
+  }
+});
+
 app.listen(8080, () => {
   console.log('Listening on port 8080');
 });
