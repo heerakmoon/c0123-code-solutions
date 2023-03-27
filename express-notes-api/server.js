@@ -13,9 +13,6 @@ for (const note in notesObj.notes) {
 }
 const app = express();
 
-const note = notesArr[0].id; // delete later
-console.log(note);
-
 app.use(express.json());
 
 app.get('/api/notes', (req, res) => {
@@ -24,16 +21,16 @@ app.get('/api/notes', (req, res) => {
 
 app.get('/api/notes/:id', (req, res) => {
   const reqToNum = Number(req.params.id);
-  if (reqToNum < 0) {
+  if (isNaN(reqToNum) || reqToNum < 0) {
     res.status(400).json({ error: 'id must be positive integer' });
-  } else if (reqToNum > 0) {
+  } else {
     let targetId;
     for (const note in notesArr) {
       targetId = notesArr[note];
       if (targetId.id === reqToNum) {
         res.status(200).json(targetId);
       } else {
-        // req.status(404).json()
+        res.status(404).json({ error: `error: cannot find note with id ${req.params.id}` });
       }
     }
   }
