@@ -12,4 +12,4 @@ class Shape {
 
 const newShape = new Shape(24, 30);
 
-console.log('newShape:', newShape);
+console.log('newShape:', newShape.print());
