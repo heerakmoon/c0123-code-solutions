@@ -6,7 +6,7 @@ class Shape {
   }
 
   print() {
-    return `The area is ${this.area} and the circumference is ${this.circumference}.`;
+    return `The area is ${this.area}. The circumference is ${this.circumference}.`;
   }
 }
 

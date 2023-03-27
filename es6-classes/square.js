@@ -7,7 +7,7 @@ class Square extends Shape {
   }
 
   print() {
-    return `${super.print()} and the square's width is ${this.width}`;
+    return `${super.print()} The width is ${this.width}.`;
   }
 }
 
