@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import ToggleButton from './ToggleButton';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         >
           Learn React
         </a>
+        <ToggleButton text="Click Me :)" color="lightblue" />
+        <ToggleButton text="No, Click Me O-O" color="lightpink" />
+        <ToggleButton text="NO. CLICK ME! >:(" color="yellow" />
       </header>
     </div>
   );
