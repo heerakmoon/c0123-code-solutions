@@ -3,6 +3,10 @@ import './App.css';
 import CustomButton from './CustomButton';
 
 function App() {
+  function handleClick(text, color) {
+    alert(`Clicked ${color} ${text} button`)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,9 +22,9 @@ function App() {
         >
           Learn React
         </a>
-        <CustomButton text="puppy" color="lightpink" />
-        <CustomButton text="kitten" color="skyblue" />
-        <CustomButton text="bunny" color="yellow" />
+        <CustomButton text="puppy" color="lightpink" onCustomClick={handleClick} />
+        <CustomButton text="kitten" color="skyblue"  onCustomClick={handleClick}/>
+        <CustomButton text="bunny" color="yellow"  onCustomClick={handleClick}/>
       </header>
     </div>
   );
