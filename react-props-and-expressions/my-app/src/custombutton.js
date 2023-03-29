@@ -1,7 +1,7 @@
-export default function CustomButton (text, color) {
+export default function CustomButton ({text, color, fontSize}) {
 
   return (
-    <button>
+    <button style={{ backgroundColor: color, fontSize: fontSize }}>
       {text}
     </button>
   )

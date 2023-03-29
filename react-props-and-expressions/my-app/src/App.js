@@ -11,7 +11,9 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <div>
-          <CustomButton text="I" color="red" />
+          <CustomButton text="I" color="red" fontSize="large" />
+          <CustomButton text="know" color="green" fontSize="large" />
+          <CustomButton text="React!" color="lightskyblue" fontSize="large" />
         </div>
       </header>
     </div>
