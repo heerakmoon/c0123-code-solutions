@@ -10,14 +10,6 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
         <ToggleButton text="Click Me :)" color="lightblue" />
         <ToggleButton text="No, Click Me O-O" color="lightpink" />
         <ToggleButton text="NO. CLICK ME! >:(" color="yellow" />

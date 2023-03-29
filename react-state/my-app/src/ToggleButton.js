@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function ToggleButton({text, color, onClick}) {
+export default function ToggleButton({text, color}) {
   const [isClicked, setIsClicked] = useState(false);
   console.log('Value returned by useState:', isClicked)
 
@@ -9,10 +9,7 @@ export default function ToggleButton({text, color, onClick}) {
     setIsClicked(!isClicked);
     console.log('Value after calling setter:', isClicked);
   }
-  if (!handleClick) {
-    return <button style={{ backgroundColor: color }} onClick={handleClick}>{text}</button>
-  } else {
-    return <button style={{ backgroundColor: 'white' }} onClick={handleClick}>{text}</button>
-  }
 
+  const bgColor = isClicked ? color : 'white';
+  return <button style={{ backgroundColor: bgColor }} onClick={handleClick}>{text}</button>
 }
