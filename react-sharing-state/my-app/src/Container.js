@@ -8,7 +8,6 @@ import React, { useState } from 'react';
  * TODO: The buttons don't work correctly!
  */
 export default function Container({ items }) {
-  // const [backgroundColor, setBackgroundColor] = useState('white');
   const [current, setCurrent] = useState(0);
 
   return (
@@ -17,7 +16,7 @@ export default function Container({ items }) {
       <div>
         <Button text="Prev"
           onClick={() => setCurrent(((current - 1) + items.length) % items.length)}/>
-        <Buttons count={items.length} />
+        <Buttons count={items.length} setCurrent={setCurrent} current={current} />
         <Button text="Next"
           onClick={() => setCurrent((current + 1) % items.length)} />
       </div>
@@ -30,8 +29,8 @@ export default function Container({ items }) {
  * TODO: Remove the toggle behavior and make the background color a prop, default white.
  * TODO: When clicked, change the current item in the Container.
  */
-function Button({ text, onClick}) {
-  return <button onClick={onClick}>{text}</button>;
+function Button({ text, onClick, backgroundColor}) {
+  return <button onClick={onClick} style={{ backgroundColor }}>{text}</button>;
 }
 
 /**
@@ -47,7 +46,7 @@ function Buttons({ count, setCurrent, current }) {
         key={i}
         text={i}
         onClick={() => setCurrent(i)}
-        backgroundColor={i === current ? 'lightblue' : undefined} />)
+        backgroundColor={ i === current ? 'lightblue' : 'white' } />)
   }
   return <div>{buttons}</div>;
 }
