@@ -14,8 +14,7 @@ export default function RegistrationFormControlled() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log('username:', username);
-    console.log('password:', password);
+    console.log('controlled username:', username, 'controlled password:', password);
   }
   return (
     <form onSubmit={handleSubmit}>
