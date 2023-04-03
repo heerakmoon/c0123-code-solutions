@@ -1,0 +1,33 @@
+.switch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 120px;
+  height: 70px;
+  border-radius: 100px;
+  transition: 0.8s;
+}
+
+.slider {
+  position: relative;
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  transition: 0.8s;
+  border-radius: 100px;
+}
+
+.on {
+  transform: translateX(25px);
+}
+
+.off {
+  transform: translateX(-25px);
+}
