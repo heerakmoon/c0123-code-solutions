@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ToggleSwitch color='white' />
+        <ToggleSwitch />
       </header>
     </div>
   );
