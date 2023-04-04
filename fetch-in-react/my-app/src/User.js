@@ -10,7 +10,7 @@ export default function User({ userId, onCancel }) {
     async function getUserId() {
       try {
         const res = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
-        if (!res.ok){
+        if (!res.ok) {
           throw new Error(`HTTP error: status ${res.status}`)
         }
         const data = await res.json();

@@ -18,7 +18,6 @@ export default function Users() {
         }
         const data = await res.json();
         setUsers(data);
-
       } catch (error) {
         setError(error)
       } finally {
