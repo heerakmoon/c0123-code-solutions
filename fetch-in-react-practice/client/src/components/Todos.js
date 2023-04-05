@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars -- Remove me */
 import React, { useEffect, useState } from 'react';
 import PageTitle from './PageTitle';
 import TodoList from './TodoList';
@@ -35,7 +34,7 @@ export default function Todos() {
     getTodos();
   }, []);
 
-  function addTodo(newTodo) {
+  async function addTodo(newTodo) {
     /* Use fetch to send a POST request to `/api/todos`.
      * Once the response JSON is received and parsed,
      *   - set the Todos to a new array with the added Todo concatenated
@@ -49,6 +48,21 @@ export default function Todos() {
      * TIP: Use Array.prototype.concat to create a new array containing the contents
      * of the old array, plus the object returned by the server.
      */
+    try {
+      const res = await fetch('/api/todos', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newTodo),
+      })
+      if (!res.ok) {
+        throw new Error(`HTTP error: status ${res.status}`)
+      }
+      // const data = await res.json();
+    } catch (error) {
+      console.error('Error', error);
+    }
   }
 
   function toggleCompleted(todoId) {
