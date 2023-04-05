@@ -3,7 +3,7 @@ import PageTitle from './PageTitle';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 
-const url = (path) => `${process.env.REACT_APP_BASE_URL}${path}`;
+// const url = (path) => `${process.env.REACT_APP_BASE_URL}${path}`;
 
 export default function Todos() {
   const [todos, setTodos] = useState([]);
