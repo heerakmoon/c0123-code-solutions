@@ -3,7 +3,7 @@ import PageTitle from './PageTitle';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 
-// const url = (path) => `${process.env.REACT_APP_BASE_URL}${path}`;
+const url = (path) => `${process.env.REACT_APP_BASE_URL}${path}`;
 
 export default function Todos() {
   const [todos, setTodos] = useState([]);
@@ -19,7 +19,7 @@ export default function Todos() {
      */
     async function getTodos () {
       try {
-        const res = await fetch('/api/todos');
+        const res = await fetch(url('/api/todos'));
         if (!res.ok) {
           throw new Error(`HTTP error: status ${res.status}`)
         }
@@ -48,18 +48,21 @@ export default function Todos() {
      * TIP: Use Array.prototype.concat to create a new array containing the contents
      * of the old array, plus the object returned by the server.
      */
+    const req = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newTodo)
+    }
+
     try {
-      const res = await fetch('/api/todos', {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newTodo),
-      })
+      const res = await fetch(url('/api/todos'), req)
       if (!res.ok) {
         throw new Error(`HTTP error: status ${res.status}`)
       }
-      // const data = await res.json();
+      const data = await res.json();
+      setTodos((prev) => prev.concat(data))
     } catch (error) {
       console.error('Error', error);
     }
