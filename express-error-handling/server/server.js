@@ -30,7 +30,7 @@ app.get('/api/grades', async (req, res, next) => {
   }
 });
 
-app.post('/api/grades', async (req, res) => {
+app.post('/api/grades', async (req, res, next) => {
   try {
     const { name, course } = req.body;
     const score = Number(req.body.score);
@@ -57,7 +57,7 @@ app.post('/api/grades', async (req, res) => {
   }
 });
 
-app.get('/api/grades/:gradeId', async (req, res) => {
+app.get('/api/grades/:gradeId', async (req, res, next) => {
   try {
     const gradeId = Number(req.params.gradeId);
     if (!Number.isInteger(gradeId) || gradeId < 1) {
@@ -85,7 +85,7 @@ app.get('/api/grades/:gradeId', async (req, res) => {
   }
 });
 
-app.put('/api/grades/:gradeId', async (req, res) => {
+app.put('/api/grades/:gradeId', async (req, res, next) => {
   try {
     const gradeId = Number(req.params.gradeId);
     if (!Number.isInteger(gradeId) || gradeId < 1) {
@@ -124,7 +124,7 @@ app.put('/api/grades/:gradeId', async (req, res) => {
   }
 });
 
-app.delete('/api/grades/:gradeId', async (req, res) => {
+app.delete('/api/grades/:gradeId', async (req, res, next) => {
   try {
     const gradeId = Number(req.params.gradeId);
     if (!Number.isInteger(gradeId) || gradeId < 1) {
