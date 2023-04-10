@@ -10,15 +10,18 @@ export default function AppDrawer () {
     setOpen(!open);
   }
 
-  const modal = open ? 'Modal' : 'Modal drawerclosed';
+  const modal = open ? 'Modal open-modal' : 'Modal';
+  const appDrawer = open ? 'Appdrawer' : 'Appdrawer drawerclosed'
 
   return (
     <div>
-      <FaBars onClick={handleClick} className='iconmargin' size={30} />
-      <div className={modal}>
-        <div className='Appdrawer'>
+      <span>
+        <FaBars onClick={handleClick} className='iconmargin' size={30} />
+      </span>
+      <div onClick={handleClick} className={modal}>
+        <div onClick={(event) => event.stopPropagation()} className={appDrawer}>
           <h4>Menu</h4>
-          {menuOptions.map((option) => <h5 key={option}>{option}</h5>)}
+          {menuOptions.map((option) => <h5 onClick={handleClick}key={option}>{option}</h5>)}
         </div>
       </div>
     </div>

@@ -5,9 +5,7 @@ function App() {
 
   return (
     <div>
-      <header>
-        <AppDrawer />
-      </header>
+      <AppDrawer />
     </div>
   );
 }
